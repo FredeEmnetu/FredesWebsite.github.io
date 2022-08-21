@@ -1,0 +1,91 @@
+html{
+    font-size: 16px;
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+h1,h2,h3{
+    text-align: center;
+    color:aliceblue;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Public-Sans', sans-serif;
+    line-height: 1.3;
+    font-size: 1.125rem // to get to rems from pixels divide by 16. (18/16) = 1.125
+}
+a, a:visited, a:hover{
+    text-decoration: none;
+    outline:0;
+}
+.flex{
+    display: flex;
+
+    &-jc-sb{
+        justify-content: space-between;
+        
+    }
+    &-jc-c{
+        justify-content:center;
+    }
+    &-ai-c{
+        align-items: center;
+    }
+}
+
+
+
+
+// /*Contact*/
+
+// .sec-contact .form-control:focus {
+//   border-color: $red;
+//   box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(173, 0, 0, .6);
+// }
+
+// .sec-contact .btn {
+//   padding: .5rem 1.75rem;
+//   background: #000;
+//   font-size: .95rem;
+//   color: #fff;
+  
+//   @extend %transition;
+  
+//   &:hover,
+//   &:focus {
+//     background: $red;
+//     border-color: darken($red, 10%);
+//   }
+// }
+
+// /*Footer*/
+
+// footer {
+//   background: #000;
+// }
+
+// .soc-media-ul {
+//   display: flex;
+//   justify-content: center;
+// }
+
+// .soc-media-ul li:not(:first-child) a {
+//   margin-left: 1em;
+// }
+
+// .soc-media-ul a {
+//   display: block;
+//   padding: 0.5em .65rem;
+//   font-size: 1rem;
+//   color: #fff;
+//   border-radius: 50%;
+//   border: 2px solid;
+
+//   &:hover,
+//   &:focus {
+//     color: $red;
+//   }
+// }
