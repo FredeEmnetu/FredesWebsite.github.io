@@ -217,6 +217,7 @@ nav ul li ul li a {
   left: 50%;
   transform: translate(-50%, -50%);
   margin: 0 auto;
+  margin-top: 1.8rem;
   min-height: 100px;
   max-width: 500px;
   border: 3px solid black;
@@ -225,9 +226,9 @@ nav ul li ul li a {
 .homepage .homepage-container h3 {
   text-align: center;
   color: black;
-  font-size: 1.25em;
+  font-size: 2rem;
   font-weight: 100;
-  line-height: 20px;
+  line-height: 40px;
 }
 
 .carousel-item {
@@ -236,9 +237,56 @@ nav ul li ul li a {
   position: relative;
 }
 
+#myCarousel .carousel-control-prev-icon {
+  min-width: 0.8em;
+  margin-left: 2.5rem;
+}
+#myCarousel .carousel-control-next-icon {
+  min-width: 0.8em;
+  margin-right: 2.5rem;
+}
+#myCarousel .sr-only {
+  font-size: 0.8em;
+  padding: 10px;
+}
+
 .about-me {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.about-me h1 {
+  font-size: 2em;
+}
+.about-me p {
+  font-size: 0.7em;
+  padding: 2px;
+}
+
+.Pcontainer {
+  width: 95%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#projects {
+  display: flex;
+  width: 80vw;
+  margin: 0 auto;
+  justify-content: space-evenly;
+}
+#projects img[class=project-image] {
+  height: 100%;
+  max-width: 150px;
+}
+@media (max-width: 700px) {
+  #projects {
+    flex-direction: column;
+  }
+  #projects .project {
+    margin: 0 auto;
+  }
 }/*# sourceMappingURL=styles.css.map */

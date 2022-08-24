@@ -203,6 +203,7 @@ nav ul li ul li a {
         left: 50%;
         transform: translate(-50%, -50%);
         margin: 0 auto;
+        margin-top: 1.8rem;
         min-height: 100px;
         max-width: 500px;
         border: 3px solid black;
@@ -211,23 +212,80 @@ nav ul li ul li a {
         h3 {
             text-align: center;
             color: black;
-            font-size: 1.25em;
+            font-size: 2rem;
             font-weight: 100;
-            line-height: 20px;
+            line-height: 40px;
         }
     }
 }
 
 //homepage ends
 // carousel starts
-.carousel-item{
+.carousel-item {
     height: 32rem;
     background-color: #777;
     position: relative;
 }
-.about-me{
+#myCarousel{
+    // a[role="button"]{
+    //     min-width: .3em;
+    //     span{
+    //         font-size:.6em;
+    //     }
+    // }
+    .carousel-control-prev-icon{
+        min-width: .8em;    
+        margin-left: 2.5rem;
+    }
+    .carousel-control-next-icon{
+        min-width: .8em;    
+        margin-right: 2.5rem;
+    }
+    .sr-only{
+        font-size: .8em;
+        padding: 10px;
+    }
+}
+
+.about-me {
     position: absolute;
     top: 50%;
-    left:50%;
+    left: 50%;
     transform: translate(-50%, -50%);
+    h1{
+        font-size: 2em;
+    }
+    p{
+        font-size: .7em;
+        padding: 2px;
+    }
+}
+
+// portfolio
+.Pcontainer {
+    // position: relative;
+    width: 95%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    
+}
+#projects{
+    display:flex;
+    width: 80vw;
+    margin: 0 auto;
+    img[class="project-image"]{
+        height: 100%;
+        max-width: 150px;
+    }
+    justify-content: space-evenly;
+
+    @media (max-width: 700px){
+        flex-direction: column;
+        .project{
+            margin: 0 auto;
+        }
+    }
 }
