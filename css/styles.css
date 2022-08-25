@@ -42,7 +42,6 @@ a, a:visited, a:hover {
 .navigation {
   height: 70px;
   background-color: #262626;
-  border-bottom: 1px solid lightgreen;
   position: absolute;
   top: 0;
   width: 100%;
@@ -91,7 +90,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  background: #2581DC;
+  background: green;
   color: #ffffff;
   transition: 0.4s;
 }
@@ -175,7 +174,7 @@ nav ul li ul li a {
   border-radius: 1px;
   height: 4px;
   width: 30px;
-  background: pink;
+  background: #8bee86;
   position: absolute;
   display: block;
   content: "";
@@ -208,7 +207,7 @@ nav ul li ul li a {
 }
 
 .homepage {
-  background-color: #fcfcfc;
+  background-image: linear-gradient(to top, #00aec9, #00b1cc, #00b4cf, #00b7d3, #00bad6, #00c0d6, #00c7d6, #00cdd4, #00d8c9, #33e1b7, #60e8a0, #8bee86);
   min-height: 100vh;
 }
 .homepage .homepage-container {
@@ -219,8 +218,7 @@ nav ul li ul li a {
   margin: 0 auto;
   margin-top: 1.8rem;
   min-height: 100px;
-  max-width: 500px;
-  border: 3px solid black;
+  max-width: 7 0px;
   padding: 1rem 2rem;
 }
 .homepage .homepage-container h3 {
@@ -233,17 +231,25 @@ nav ul li ul li a {
 
 .carousel-item {
   height: 32rem;
-  background-color: #777;
+  background-color: #fcfcfc;
   position: relative;
 }
 
+#myCarousel .carousel-indicators [data-bs-target] {
+  background-color: black;
+}
+#myCarousel a[role=button] {
+  color: black;
+}
 #myCarousel .carousel-control-prev-icon {
-  min-width: 0.8em;
+  min-width: 0.9em;
   margin-left: 2.5rem;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
 }
 #myCarousel .carousel-control-next-icon {
-  min-width: 0.8em;
+  min-width: 0.9em;
   margin-right: 2.5rem;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
 #myCarousel .sr-only {
   font-size: 0.8em;
@@ -258,9 +264,10 @@ nav ul li ul li a {
 }
 .about-me h1 {
   font-size: 2em;
+  color: #434343;
 }
 .about-me p {
-  font-size: 0.7em;
+  font-size: 0.9em;
   padding: 2px;
 }
 
@@ -271,6 +278,9 @@ nav ul li ul li a {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.Pcontainer h2 {
+  color: black;
+}
 
 #projects {
   display: flex;
@@ -280,7 +290,7 @@ nav ul li ul li a {
 }
 #projects img[class=project-image] {
   height: 100%;
-  max-width: 150px;
+  max-width: 170px;
 }
 @media (max-width: 700px) {
   #projects {
@@ -288,5 +298,184 @@ nav ul li ul li a {
   }
   #projects .project {
     margin: 0 auto;
+  }
+}
+
+.Quals {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+}
+.Quals h1 {
+  color: black;
+}
+.Quals div[class=flex] {
+  font-size: 1em;
+  justify-content: space-evenly;
+}
+
+.site-footer {
+  background-color: #26272b;
+  padding: 45px 0 20px;
+  font-size: 15px;
+  line-height: 24px;
+  color: #737373;
+}
+
+.site-footer hr {
+  border-top-color: #bbb;
+  opacity: 0.5;
+}
+
+.site-footer hr.small {
+  margin: 20px 0;
+}
+
+.site-footer h6 {
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 5px;
+  letter-spacing: 2px;
+}
+
+.site-footer a {
+  color: #737373;
+}
+
+.site-footer a:hover {
+  color: #3366cc;
+  text-decoration: none;
+}
+
+.footer-links {
+  padding-left: 0;
+  list-style: none;
+}
+
+.footer-links li {
+  display: block;
+}
+
+.footer-links a {
+  color: #737373;
+}
+
+.footer-links a:active,
+.footer-links a:focus,
+.footer-links a:hover {
+  color: #3366cc;
+  text-decoration: none;
+}
+
+.footer-links.inline li {
+  display: inline-block;
+}
+
+.site-footer .social-icons {
+  text-align: right;
+}
+
+.site-footer .social-icons a {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin-left: 6px;
+  margin-right: 0;
+  border-radius: 100%;
+  background-color: #33353d;
+}
+
+.copyright-text {
+  margin: 0;
+}
+
+@media (max-width: 991px) {
+  .site-footer [class^=col-] {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .site-footer {
+    padding-bottom: 0;
+  }
+  .site-footer .copyright-text,
+.site-footer .social-icons {
+    text-align: center;
+  }
+}
+.social-icons {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin-bottom: 4px;
+  color: green;
+}
+
+.social-icons li.title {
+  margin-right: 15px;
+  text-transform: uppercase;
+  color: #96a2b2;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.social-icons a {
+  background-color: #eceeef;
+  color: white;
+  font-size: 16px;
+  display: inline-block;
+  line-height: 44px;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  margin-right: 8px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.social-icons a:active,
+.social-icons a:focus,
+.social-icons a:hover {
+  color: #fff;
+  background-color: #29aafe;
+}
+
+.social-icons.size-sm a {
+  line-height: 34px;
+  height: 34px;
+  width: 34px;
+  font-size: 14px;
+}
+
+.social-icons a.facebook:hover {
+  background-color: #3b5998;
+}
+
+.social-icons a.twitter:hover {
+  background-color: #00aced;
+}
+
+.social-icons a.linkedin:hover {
+  background-color: #007bb6;
+}
+
+.social-icons a.dribbble:hover {
+  background-color: #ea4c89;
+}
+
+@media (max-width: 767px) {
+  .social-icons li.title {
+    display: block;
+    margin-right: 0;
+    font-weight: 600;
   }
 }/*# sourceMappingURL=styles.css.map */
