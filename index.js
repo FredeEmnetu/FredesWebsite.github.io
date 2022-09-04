@@ -5,3 +5,5 @@ $("#nav-toggle").on("click", function () {
 $("#nav-toggle").click(function () {
     $("nav ul").toggle();
 });
+var myCarousel = document.querySelector('#myCarousel')
+var carousel = new bootstrap.Carousel(myCarousel)

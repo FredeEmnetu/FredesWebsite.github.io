@@ -206,6 +206,23 @@ nav ul li ul li a {
   transform: rotate(-45deg);
 }
 
+#tsparticles {
+  position: absolute;
+  width: 90vw;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (max-width: 800px) {
+  #tsparticles {
+    visibility: hidden;
+  }
+}
+
 .homepage {
   background-image: linear-gradient(to top, #00aec9, #00b1cc, #00b4cf, #00b7d3, #00bad6, #00c0d6, #00c7d6, #00cdd4, #00d8c9, #33e1b7, #60e8a0, #8bee86);
   min-height: 100vh;
@@ -216,7 +233,6 @@ nav ul li ul li a {
   left: 50%;
   transform: translate(-50%, -50%);
   margin: 0 auto;
-  margin-top: 1.8rem;
   min-height: 100px;
   max-width: 7 0px;
   padding: 1rem 2rem;
@@ -235,8 +251,15 @@ nav ul li ul li a {
   position: relative;
 }
 
+#myCarousel {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
 #myCarousel .carousel-indicators [data-bs-target] {
   background-color: black;
+}
+#myCarousel .carousel-indicators {
+  margin-bottom: 0;
 }
 #myCarousel a[role=button] {
   color: black;
@@ -255,6 +278,12 @@ nav ul li ul li a {
   font-size: 0.8em;
   padding: 10px;
 }
+@media (max-width: 700px) {
+  #myCarousel .carousel-control-prev,
+#myCarousel .carousel-control-next {
+    display: none;
+  }
+}
 
 .about-me {
   position: absolute;
@@ -271,34 +300,36 @@ nav ul li ul li a {
   padding: 2px;
 }
 
-.Pcontainer {
-  width: 95%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.Pcontainer h2 {
+#PortTitle {
   color: black;
 }
 
-#projects {
+.portfolio {
   display: flex;
-  width: 80vw;
-  margin: 0 auto;
   justify-content: space-evenly;
 }
-#projects img[class=project-image] {
-  height: 100%;
-  max-width: 170px;
-}
 @media (max-width: 700px) {
-  #projects {
+  .portfolio {
     flex-direction: column;
+    justify-content: center;
   }
-  #projects .project {
-    margin: 0 auto;
-  }
+}
+
+.overlay {
+  position: relative;
+}
+.overlay img {
+  width: 100%;
+}
+.overlay .inside {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.overlay .inside:hover {
+  background: rgba(0, 0, 0, 0.6);
 }
 
 .Quals {
