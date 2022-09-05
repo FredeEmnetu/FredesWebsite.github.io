@@ -307,29 +307,53 @@ nav ul li ul li a {
 .portfolio {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
+  height: 25rem;
 }
 @media (max-width: 700px) {
   .portfolio {
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
   }
 }
 
-.overlay {
+.portfolio-overlay {
   position: relative;
+  width: 25%;
 }
-.overlay img {
+.portfolio-overlay img {
   width: 100%;
 }
-.overlay .inside {
+.portfolio-overlay .overlay {
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: opacity 0.5s;
 }
-.overlay .inside:hover {
-  background: rgba(0, 0, 0, 0.6);
+.portfolio-overlay .overlay .title {
+  font-size: 3rem;
+  letter-spacing: 0.1em;
+  color: #fff;
+  transform: translateY(2em);
+  transition: transform 0.5s;
+}
+.portfolio-overlay .overlay:hover {
+  opacity: 1;
+}
+.portfolio-overlay .overlay:hover > * {
+  transform: translateY(0);
+}
+@media (max-width: 700px) {
+  .portfolio-overlay {
+    width: 30%;
+  }
 }
 
 .Quals {
@@ -347,21 +371,28 @@ nav ul li ul li a {
   justify-content: space-evenly;
 }
 
+footer form {
+  display: flex;
+  justify-content: center;
+}
+footer form .half-left {
+  display: flex;
+  flex-direction: column;
+}
+footer form #submitform {
+  width: 50%;
+  margin: 0 auto;
+}
+footer form #submitform button {
+  width: 2em;
+}
+
 .site-footer {
   background-color: #26272b;
   padding: 45px 0 20px;
   font-size: 15px;
   line-height: 24px;
   color: #737373;
-}
-
-.site-footer hr {
-  border-top-color: #bbb;
-  opacity: 0.5;
-}
-
-.site-footer hr.small {
-  margin: 20px 0;
 }
 
 .site-footer h6 {
@@ -379,19 +410,6 @@ nav ul li ul li a {
 .site-footer a:hover {
   color: #3366cc;
   text-decoration: none;
-}
-
-.footer-links {
-  padding-left: 0;
-  list-style: none;
-}
-
-.footer-links li {
-  display: block;
-}
-
-.footer-links a {
-  color: #737373;
 }
 
 .footer-links a:active,
@@ -417,10 +435,6 @@ nav ul li ul li a {
   margin-right: 0;
   border-radius: 100%;
   background-color: #33353d;
-}
-
-.copyright-text {
-  margin: 0;
 }
 
 @media (max-width: 991px) {

@@ -46,7 +46,7 @@
     <!-- <div id="myCarousel" class="carousel slide" data-interval="5000" data-touch="true" data-ride="carousel"> -->
     <!-- data-bs-ride="carousel" -->
     <section class="carousel">
-        <div id="myCarousel" data-bs-touch="true" data-bs-interval="true" class="carousel slide">
+        <div id="myCarousel" data-bs-touch="true" data-bs-interval="1000" class="carousel slide">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
@@ -68,24 +68,42 @@
                     <h2 id="PortTitle">Portfolio</h2>
                     <div class="container">
                         <div class="portfolio">
-                            <div class="overlay">
-                                <img src="https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Fthumbs.dreamstime.com%2Fb%2Frainbow-love-heart-background-red-wood-60045149.jpg&sp=1662324261Teed0a20d07919092890f115186fccb505e29e4f405ed819ce5fd2a531cf718c2" alt="">
-                                <div class="inside">des</div>
+                            <div class="portfolio-overlay">
+                                <a href="https://www.google.ca" target="_blank">
+
+                                    <img src="https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Fthumbs.dreamstime.com%2Fb%2Frainbow-love-heart-background-red-wood-60045149.jpg&sp=1662324261Teed0a20d07919092890f115186fccb505e29e4f405ed819ce5fd2a531cf718c2"
+                                        alt="">
+                                    <div class="overlay">
+                                        <div class="title">des</div>
+                                    </div>
+                                </a>
                             </div>
-                            <!-- <div class="overlay">
-                                <img src="https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Fthumbs.dreamstime.com%2Fb%2Frainbow-love-heart-background-red-wood-60045149.jpg&sp=1662324261Teed0a20d07919092890f115186fccb505e29e4f405ed819ce5fd2a531cf718c2" alt="">
-                                <div class="inside">des</div>
+
+                            <div class="portfolio-overlay">
+                                <a href="https://www.google.ca" target="_blank">
+
+                                    <img src="https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Fthumbs.dreamstime.com%2Fb%2Frainbow-love-heart-background-red-wood-60045149.jpg&sp=1662324261Teed0a20d07919092890f115186fccb505e29e4f405ed819ce5fd2a531cf718c2"
+                                        alt="">
+                                    <div class="overlay">
+                                        <div class="title">des</div>
+                                    </div>
+                                </a>
                             </div>
-                            <div class="overlay">
-                                <img src="https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Fthumbs.dreamstime.com%2Fb%2Frainbow-love-heart-background-red-wood-60045149.jpg&sp=1662324261Teed0a20d07919092890f115186fccb505e29e4f405ed819ce5fd2a531cf718c2" alt="">
-                                <div class="inside">des</div>
-                            </div> -->
+                            <div class="portfolio-overlay">
+                                <a href="https://www.google.ca" target="_blank">
+
+                                    <img src="https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Fthumbs.dreamstime.com%2Fb%2Frainbow-love-heart-background-red-wood-60045149.jpg&sp=1662324261Teed0a20d07919092890f115186fccb505e29e4f405ed819ce5fd2a531cf718c2"
+                                        alt="">
+                                    <div class="overlay">
+                                        <div class="title">des</div>
+                                    </div>
+                                </a>
+                            </div>
 
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
-
                     <div class="Quals">
                         <h1>Skills</h1>
                         <div class="flex">
@@ -117,12 +135,25 @@
             </a>
         </div>
     </section>
+
     <footer class="site-footer">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-sm-12 col-md-6">
-                    <h6 class="text-center">Reach OUT</h6>
-                    <p class="text-justify">.</p>
+            <div>
+                <!-- <div class="col-sm-12 col-md-6"> -->
+                <h6 class="text-center">Reach OUT</h6>
+                <div class="form">
+                    <form action="https://formsubmit.co/ferid226@hotmail.com" method="POST">
+                        <div class="half-left">
+                            <input type="text" name="name" placeholder="Name" required>
+                            <input type="email" name="email" placeholder="Email" required>
+                        </div>
+                        <div class="half-right">
+                            <textarea name="message" type="text" id="input-message" placeholder="Message"></textarea>
+                        </div>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+                <div id="submitform">
                 </div>
             </div>
             <hr>
@@ -131,7 +162,6 @@
             <div class="row">
                 <div class="col-md-8 col-sm-6 col-xs-12">
                     <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by Frede
-
                     </p>
                 </div>
 
@@ -146,17 +176,18 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@1.28.0/dist/tsparticles.min.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2.5.0/custom-elements-es5-adapter.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2.5.0/webcomponents-loader.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/web-particles@1.1.0/dist/web-particles.min.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
         integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
         integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/tsparticles@1.28.0/dist/tsparticles.min.js"></script>
-    <script
-        src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2.5.0/custom-elements-es5-adapter.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2.5.0/webcomponents-loader.js"></script>
-    <script type="module" src="https://cdn.jsdelivr.net/npm/web-particles@1.1.0/dist/web-particles.min.js"></script>
     <script src="index.js"></script>
 </body>
 
