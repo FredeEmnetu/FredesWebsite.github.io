@@ -310,7 +310,7 @@ nav ul li ul li a {
   align-items: center;
   height: 25rem;
 }
-@media (max-width: 700px) {
+@media (max-width: 775px) {
   .portfolio {
     flex-direction: column;
     justify-content: space-evenly;
@@ -319,7 +319,7 @@ nav ul li ul li a {
 
 .portfolio-overlay {
   position: relative;
-  width: 25%;
+  max-width: 25%;
 }
 .portfolio-overlay img {
   width: 100%;
@@ -333,12 +333,13 @@ nav ul li ul li a {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   background: rgba(0, 0, 0, 0.7);
   opacity: 0;
   transition: opacity 0.5s;
 }
 .portfolio-overlay .overlay .title {
-  font-size: 3rem;
+  font-size: 2rem;
   letter-spacing: 0.1em;
   color: #fff;
   transform: translateY(2em);
@@ -375,16 +376,34 @@ footer form {
   display: flex;
   justify-content: center;
 }
-footer form .half-left {
-  display: flex;
-  flex-direction: column;
+footer form input {
+  border-width: 0 0 2px 0;
+  background-color: transparent;
+  border-color: #ffffff;
+  color: #fff;
+  margin: 30px 10px 10px 10px;
 }
-footer form #submitform {
-  width: 50%;
-  margin: 0 auto;
+footer form input:focus {
+  outline: none;
 }
-footer form #submitform button {
-  width: 2em;
+footer form .submit-btn {
+  position: relative;
+}
+footer form .submit-btn button {
+  display: block;
+  position: absolute;
+  background-color: red;
+  width: 6em;
+  top: 30%;
+  border: 1px solid black;
+  border-radius: 10px;
+  color: black;
+  background-color: white;
+}
+@media (max-width: 775px) {
+  footer form {
+    flex-direction: column;
+  }
 }
 
 .site-footer {
@@ -511,10 +530,6 @@ footer form #submitform button {
 
 .social-icons a.linkedin:hover {
   background-color: #007bb6;
-}
-
-.social-icons a.dribbble:hover {
-  background-color: #ea4c89;
 }
 
 @media (max-width: 767px) {

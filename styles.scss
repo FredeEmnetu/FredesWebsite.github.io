@@ -316,13 +316,15 @@ nav ul li ul li a {
 #PortTitle {
     color: black;
 }
+
 .portfolio {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     height: 25rem;
+
     // background-color: green;
-    @media (max-width: 700px) {
+    @media (max-width: 775px) {
         flex-direction: column;
         justify-content: space-evenly;
     }
@@ -330,7 +332,7 @@ nav ul li ul li a {
 
 .portfolio-overlay {
     position: relative;
-    width: 25%;
+    max-width: 25%;
 
     img {
         width: 100%;
@@ -345,13 +347,14 @@ nav ul li ul li a {
         display: flex;
         justify-content: center;
         align-items: center;
+        text-align: center;
 
         background: rgba(0, 0, 0, 0.7);
         opacity: 0;
         transition: opacity .5s;
 
         .title {
-            font-size: 3rem;
+            font-size: 2rem;
             letter-spacing: .1em;
             color: #fff;
             transform: translateY(2em);
@@ -361,13 +364,15 @@ nav ul li ul li a {
         &:hover {
             opacity: 1;
         }
-        &:hover > *{
+
+        &:hover>* {
             transform: translateY(0);
 
         }
 
 
     }
+
     @media (max-width: 700px) {
         width: 30%;
     }
@@ -394,21 +399,45 @@ nav ul li ul li a {
 
 //footer
 
-footer form{
-    display:flex;
+footer form {
+    display: flex;
     justify-content: center;
-    .half-left{
-        display:flex;
-        flex-direction: column;
+
+    input{
+        border-width: 0 0 2px 0;
+        background-color: transparent;
+        border-color: #ffffff;
+        color: #fff;
+        margin: 30px 10px 10px 10px;;
+        &:focus{
+            outline: none;
+        }
+
     }
-    #submitform{
-        width: 50%;
-        margin: 0 auto;
+    .submit-btn {
+        position: relative;
         button{
-            width: 2em;
+            display: block;
+            position: absolute;
+            background-color: red;
+            width: 6em;
+            top: 30%;
+            border: 1px solid black;
+            border-radius: 10px;
+            color: black;
+            background-color:white;
+            
         }
     }
+    @media (max-width: 775px) {
+        flex-direction: column;
+    }
+
 }
+
+
+
+//
 .site-footer {
     background-color: #26272b;
     padding: 45px 0 20px;
@@ -466,6 +495,7 @@ footer form{
         margin-bottom: 30px;
     }
 }
+
 @media (max-width: 767px) {
     .site-footer {
         padding-bottom: 0;
@@ -537,10 +567,6 @@ footer form{
 
 .social-icons a.linkedin:hover {
     background-color: #007bb6;
-}
-
-.social-icons a.dribbble:hover {
-    background-color: #ea4c89;
 }
 
 @media (max-width: 767px) {
